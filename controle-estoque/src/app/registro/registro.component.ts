@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Registro } from './registro';
 
 
@@ -9,7 +10,7 @@ import { Registro } from './registro';
 })
 export class RegistroComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,) { }
 
   ngOnInit(): void {
   }
@@ -17,8 +18,9 @@ export class RegistroComponent implements OnInit {
   model = new Registro('', '', '', '','');
   submitted = false; 
 
-  onSubmit() { this.submitted = true; 
+  onSubmit() { 
   console.log(this.model);
+  this.router.navigate(['/login']);
   }
 
 }

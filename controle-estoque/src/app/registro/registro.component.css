@@ -1,8 +1,13 @@
 .container{
     margin-top: 4%;
+    padding: 0 10% 0 10%;
 }
 
 .form-group > label{
     margin-top: 10px;
     margin-bottom: 0px;
+}
+
+.mat-typography{
+    background: linear-gradient(90deg, rgba(159,110,171,1) 0%, rgba(125,65,177,0.6559757692139356) 35%, rgba(149,0,255,1) 100%);
 }

@@ -72,4 +72,10 @@ body {
 .btn-black{
     background-color: #000 !important;
     color: #fff;
+    
+}
+
+.btn {
+    width: 20%;
+    margin-right: 5px;
 }
