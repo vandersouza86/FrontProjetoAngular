@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRoutingModule } from './app-routing.module';
 import { ProdutoModule } from './produto/produto.module';
 import { EmpresaModule } from './empresa/empresa.module';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -22,6 +23,7 @@ import { EmpresaModule } from './empresa/empresa.module';
     MenuComponent,
     ContantComponent,
     PageNotFoundComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,

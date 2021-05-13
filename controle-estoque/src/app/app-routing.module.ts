@@ -1,3 +1,4 @@
+import { RegistroComponent } from './registro/registro.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,12 +10,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const appRoutes: Routes = [  
   { path: 'conteudo', component: ContantComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'registro', component: RegistroComponent}, 
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 
 ];
-
-
 
 @NgModule({
   declarations: [],

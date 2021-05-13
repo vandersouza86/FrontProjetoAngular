@@ -1,0 +1,19 @@
+
+<div class="container">
+   
+    <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+        <div class="form-group">
+            <label for="nome" class="">Nome</label>
+            <input class="form-control " type="text" placeholder="Nome" [(ngModel)]="model.nome" name="nome">
+            <label for="sobrenome">Sobrenome</label>
+            <input class="form-control" type="text" placeholder="Sobrenome" [(ngModel)]="model.sobrenome" name="sobrenome">
+            <label for="usuario">Usuário</label>
+            <input class="form-control " type="text" placeholder="Usuário" [(ngModel)]="model.usuario" name="usuario">
+            <label for="email">Email</label>
+            <input class="form-control " type="text" placeholder="Email" [(ngModel)]="model.email" name="email">
+            <label for="senha">Senha</label>
+            <input class="form-control " type="text" placeholder="Senha" [(ngModel)]="model.senha" name="senha">
+        </div>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+</div>

@@ -1,0 +1,8 @@
+.container{
+    margin-top: 4%;
+}
+
+.form-group > label{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
