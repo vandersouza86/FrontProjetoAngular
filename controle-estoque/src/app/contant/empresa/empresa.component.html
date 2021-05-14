@@ -1,0 +1,24 @@
+<div class="container">
+   
+    <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+        <div class="form-group">
+            <label for="nome" class="">Nome</label>
+            <input class="form-control " type="text" placeholder="Nome" [(ngModel)]="model.nome" name="nome">           
+            <label for="usuario">CNPJ</label>
+            <input class="form-control " type="text" placeholder="Usuário" [(ngModel)]="model.cnpj" name="cnpj">
+            <label for="email">CEP</label>
+            <input class="form-control " type="text" placeholder="Email" [(ngModel)]="model.cep" name="cep">
+            <label for="senha">Estado</label>
+            <input class="form-control " type="text" placeholder="Estado" [(ngModel)]="model.estado" name="estado">
+            <label for="senha">Cidade</label>
+            <input class="form-control " type="text" placeholder="Cidade" [(ngModel)]="model.cidade" name="cidade">
+            <label for="senha">Bairro</label>
+            <input class="form-control " type="text" placeholder="Bairro" [(ngModel)]="model.bairro" name="bairro">
+            <label for="senha">Logradouro</label>
+            <input class="form-control " type="text" placeholder="Logradouro" [(ngModel)]="model.logradouro" name="logradouro">
+            <label for="senha">Número</label>
+            <input class="form-control " type="text" placeholder="Número" [(ngModel)]="model.numero" name="numero">
+        </div>
+        <button type="submit" class="btn btn-secondary" >Enviar</button>
+    </form>
+</div>

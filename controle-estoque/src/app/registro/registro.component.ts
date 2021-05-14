@@ -15,12 +15,12 @@ export class RegistroComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  model = new Registro('', '', '', '','');
+  model = new Registro('', '', '', '');
   submitted = false; 
 
   onSubmit() { 
-  console.log(this.model);
-  this.router.navigate(['/login']);
+    console.log(this.model);
+    this.router.navigate(['/login']);
   }
 
 }

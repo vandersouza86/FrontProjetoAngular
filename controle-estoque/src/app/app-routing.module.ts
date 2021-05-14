@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
-import { ContantComponent } from './contant/contant.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [  
-  { path: 'conteudo', component: ContantComponent },
+  
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent}, 
   { path: '', redirectTo: '/login', pathMatch: 'full' },

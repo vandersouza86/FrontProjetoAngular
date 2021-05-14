@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
@@ -13,8 +14,14 @@ export class LoginComponent  {
     senha: new FormControl(''),
   });
 
+  constructor(private router: Router) { }
+
   onSubmit() {
-    console.warn(this.profileForm.value);
+    
+  }
+
+  login(){
+    this.router.navigate(['/home']);
   }
 
 }

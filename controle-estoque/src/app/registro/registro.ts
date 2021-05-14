@@ -1,8 +1,7 @@
 export class Registro {
 
     constructor(
-        public nome: string,
-        public sobrenome: string,
+        public nome_completo: string,
         public usuario: string,
         public email: string,
         public senha: string

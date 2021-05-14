@@ -1,0 +1,14 @@
+<div class="container">
+   
+    <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+        <div class="form-group">
+            <label for="nome" class="">Nome</label>
+            <input class="form-control " type="text" placeholder="Nome" [(ngModel)]="model.nome" name="nome">           
+            <label for="usuario">Preço</label>
+            <input class="form-control " type="text" placeholder="Preço" [(ngModel)]="model.preco" name="preco">
+            <label for="email">Produto</label>
+            <input class="form-control " type="text" placeholder="Produto" [(ngModel)]="model.produto" name="produto">
+        </div>
+        <button type="submit" class="btn btn-secondary" >Enviar</button>
+    </form>
+</div>

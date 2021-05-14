@@ -4,9 +4,7 @@
     <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
         <div class="form-group">
             <label for="nome" class="">Nome</label>
-            <input class="form-control " type="text" placeholder="Nome" [(ngModel)]="model.nome" name="nome">
-            <label for="sobrenome">Sobrenome</label>
-            <input class="form-control" type="text" placeholder="Sobrenome" [(ngModel)]="model.sobrenome" name="sobrenome">
+            <input class="form-control " type="text" placeholder="Nome" [(ngModel)]="model.nome_completo" name="nome">           
             <label for="usuario">Usuário</label>
             <input class="form-control " type="text" placeholder="Usuário" [(ngModel)]="model.usuario" name="usuario">
             <label for="email">Email</label>
