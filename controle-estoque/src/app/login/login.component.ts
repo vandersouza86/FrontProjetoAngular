@@ -1,3 +1,4 @@
+import { Registro } from './../registro/registro';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
@@ -22,6 +23,10 @@ export class LoginComponent  {
 
   login(){
     this.router.navigate(['/home']);
+  }
+
+  registro(){
+    this.router.navigate(['/registro']);
   }
 
 }

@@ -22,6 +22,11 @@ body {
     padding: 0px 10px;
 }
 
+.login-form{
+    padding-top: 30%;
+    padding-left: 20%;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
 }
@@ -47,14 +52,14 @@ body {
         z-index: 1;
         top: 0;
         left: 0;
-    }
-
-    .login-form{
-        margin-top: 80%;
-    }
+    }       
 
     .register-form{
         margin-top: 20%;
+    }
+
+    .mat-form-field{
+        width: 70%;
     }
 }
 
