@@ -1,7 +1,6 @@
 .card-contant{
     display: flex;
     padding: 20% 20% 0 20%;
-    height: 50%;
 }
 
 .card-contant app-card {

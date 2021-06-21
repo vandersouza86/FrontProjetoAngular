@@ -1,13 +1,10 @@
 
 
 .card-contant-inside { 
-    width: 100%;
-    height: 100%;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    margin-right: 10px;
-    padding-top: 30%;
+    padding-top: 25%;
     font-weight: bold;
     font-size: large;
 
@@ -30,15 +27,14 @@
 }
 
 .flip-container {
-    background-color: lightgray;
     perspective: 1000px;
 }
 
 .flipper{
     position: relative;
 	width: 100%;
-	height: 100%;
-    transition: transform 0.8s;
+	height: 200px;
+    transition: transform 2s;
 	transform-style: preserve-3d;
 }
 
@@ -52,7 +48,7 @@
 .front, .back{
 	position: absolute;
 	width: 100%;
-	height: 100px;
+	height: 40%;
     backface-visibility: hidden;
 }
 
