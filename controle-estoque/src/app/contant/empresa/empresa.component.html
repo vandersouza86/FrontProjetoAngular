@@ -1,24 +1,42 @@
+<app-menu></app-menu>
+
 <div class="container">
    
     <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
         <div class="form-group">
-            <label for="nome" class="">Nome</label>
-            <input class="form-control " type="text" placeholder="Nome" [(ngModel)]="model.nome" name="nome">           
-            <label for="usuario">CNPJ</label>
-            <input class="form-control " type="text" placeholder="Usuário" [(ngModel)]="model.cnpj" name="cnpj">
-            <label for="email">CEP</label>
-            <input class="form-control " type="text" placeholder="Email" [(ngModel)]="model.cep" name="cep">
-            <label for="senha">Estado</label>
-            <input class="form-control " type="text" placeholder="Estado" [(ngModel)]="model.estado" name="estado">
-            <label for="senha">Cidade</label>
-            <input class="form-control " type="text" placeholder="Cidade" [(ngModel)]="model.cidade" name="cidade">
-            <label for="senha">Bairro</label>
-            <input class="form-control " type="text" placeholder="Bairro" [(ngModel)]="model.bairro" name="bairro">
-            <label for="senha">Logradouro</label>
-            <input class="form-control " type="text" placeholder="Logradouro" [(ngModel)]="model.logradouro" name="logradouro">
-            <label for="senha">Número</label>
-            <input class="form-control " type="text" placeholder="Número" [(ngModel)]="model.numero" name="numero">
+            <mat-form-field class="example-full-width">
+                <mat-label>Nome</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.nome" name="nome">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>CNPJ</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.cnpj" name="cnpj">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>CEP</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.cep" name="cep">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Estado</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.estado" name="estado">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Cidade</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.cidade" name="cidade">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Bairro</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.bairro" name="bairro">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Logradouro</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.logradouro" name="logradouro">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Número</mat-label>
+                <input matInput type="text"  [(ngModel)]="model.numero" name="numero">
+            </mat-form-field>           
         </div>
-        <button type="submit" class="btn btn-secondary" >Enviar</button>
+        <button type="submit" class="btn btn-secondary" mat-flat-button color="primary">Enviar</button>
     </form>
 </div>

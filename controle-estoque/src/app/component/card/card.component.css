@@ -1,0 +1,64 @@
+
+
+.card-contant-inside { 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-top: 30%;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.change-card {
+    background-color: lightgray;
+    width: 90%;
+    height: 24%;
+    font-size: medium;
+
+}
+
+.card-values {
+    margin-bottom: 10px;
+}
+
+.card-values p {
+    cursor: pointer;
+}
+
+.flip-container {
+    background-color: lightgray;
+    perspective: 1000px;
+}
+
+.flipper{
+    position: relative;
+	width: 100%;
+	height: 100%;
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+	/* se quiser uma animação na vertical,
+	troque por rotateX(180deg)
+	*/
+}
+
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+    backface-visibility: hidden;
+}
+
+.back{   
+	transform: rotateY(180deg);
+}
+
+
+

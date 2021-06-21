@@ -1,0 +1,17 @@
+.card-contant{
+    display: flex;
+    padding: 20% 20% 0 20%;
+    height: 50%;
+}
+
+.card-contant app-card {
+    margin-right: 40px;
+    width: 20%;    
+}
+
+#empresa:hover, #produto:hover {
+    background-color: lightgray;
+    width: 24%;
+    height: 24%;
+
+}

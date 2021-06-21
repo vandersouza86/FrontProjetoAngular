@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { EmpresaModel } from './empresa-model';
+import { EmpresaModel } from '../../model/empresa-model';
 
 @Component({
   selector: 'app-empresa',
@@ -11,7 +11,7 @@ export class EmpresaComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  model =  new EmpresaModel(0, '', '','','','','','',0);
+  model =  new EmpresaModel(0, '', '','','','','','','');
 
   ngOnInit(): void {
   }

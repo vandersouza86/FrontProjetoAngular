@@ -1,0 +1,15 @@
+<div class="flip-container">
+    <div class="flipper">
+        <div class="front card-contant-inside">
+            {{valueFront}}
+        </div>
+        <div class="back">
+            <div  class="card-contant-inside flip-container">
+                <div class="card-values" *ngFor="let valueBack of valueBackList" routerLink={{valueBack.router}}>
+                   <p> {{valueBack.nome}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,17 +1,24 @@
 
-<div class="container">
-   
+<div class="container">   
     <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
         <div class="form-group">
-            <label for="nome" class="">Nome</label>
-            <input class="form-control " type="text" placeholder="Nome" [(ngModel)]="model.nome_completo" name="nome">           
-            <label for="usuario">Usuário</label>
-            <input class="form-control " type="text" placeholder="Usuário" [(ngModel)]="model.usuario" name="usuario">
-            <label for="email">Email</label>
-            <input class="form-control " type="text" placeholder="Email" [(ngModel)]="model.email" name="email">
-            <label for="senha">Senha</label>
-            <input class="form-control " type="text" placeholder="Senha" [(ngModel)]="model.senha" name="senha">
+            <mat-form-field class="example-full-width">
+                <mat-label>Nome</mat-label>
+                <input matInput [(ngModel)]="model.nome_completo" name="nome">
+             </mat-form-field>
+             <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput [(ngModel)]="model.email" name="email">
+             </mat-form-field>
+             <mat-form-field class="example-full-width">
+                <mat-label>Usuário</mat-label>
+                <input matInput [(ngModel)]="model.usuario" name="usuario">
+             </mat-form-field>             
+             <mat-form-field class="example-full-width">
+                <mat-label>Senha</mat-label>
+                <input matInput [(ngModel)]="model.senha" name="senha">
+             </mat-form-field>            
         </div>
-        <button type="submit" class="btn btn-secondary" >Enviar</button>
+        <button type="submit" class="btn btn-secondary" mat-flat-button color="primary" >Enviar</button>
     </form>
 </div>

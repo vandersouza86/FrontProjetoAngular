@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { ProdutoModel } from './produto-model';
+import { ProdutoModel } from '../../model/produto-model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -18,7 +18,8 @@ export class ProdutoComponent implements OnInit {
 
   onSubmit() { 
     console.log(this.model);
-    this.router.navigate(['/home']);
+    alert("Dados cadastrados com sucesso!");
+   // this.router.navigate(['/home']);
   }
 
 

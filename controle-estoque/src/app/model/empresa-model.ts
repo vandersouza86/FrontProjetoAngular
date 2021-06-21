@@ -9,6 +9,6 @@ export class EmpresaModel {
         public cidade: string,
         public bairro: string, 
         public logradouro: string,
-        public numero: number,
+        public numero: string,
     ){}
 }
